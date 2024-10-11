@@ -1,7 +1,9 @@
 {
   "name": "otakudesu-api",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts -o dist/index.js",
+    "start": "bun run dist/index.js"
   },
   "dependencies": {
     "axios": "^1.7.3",
